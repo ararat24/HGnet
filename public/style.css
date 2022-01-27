@@ -1,5 +1,5 @@
 body{
-    min-height: 120vh;
+    min-height: 100vh;
 }
 * {
     margin:0;
@@ -108,6 +108,7 @@ li {
   
 li:hover > .submenu, li:hover > .second-submenu {
     display: flex;
+    min-width: 100%;
 }
   
 ul {
@@ -123,10 +124,13 @@ a {
     background-color: #cccccc;
     padding: 1em;
     white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: 0.6s;
 }
   
 a:hover {
-    background-color: #a0a0a0;
+    /* background-color: #a0a0a0; */
+    border-color: #a0a0a0;
 }
   
 a:focus {
@@ -135,10 +139,16 @@ a:focus {
 }
   
 .header {
+    padding: 0.9%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    background-color: #cccccc
+    background-color: #cccccc;
 }
 
+.brand img {
+    width: 14%;
+    margin-left: 5%;
+}
 /* header styling ends here */
   
