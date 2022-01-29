@@ -1,6 +1,20 @@
-body{
+body {
     min-height: 100vh;
 }
+
+.bg-silver {
+    background-color: #cccccc;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
 * {
     margin:0;
     padding:0;
@@ -85,11 +99,6 @@ body{
 }
 
 /* header styling starts here */
-
-*{
-    margin:0;
-    padding:0;
-}
  
 .submenu, .second-submenu {
     display: none;
@@ -139,15 +148,16 @@ a:focus {
 }
   
 .header {
-    padding: 0.9%;
+    padding:8px;
+    height: 64px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #cccccc;
+    align-items: center;
 }
 
 .brand img {
-    width: 14%;
+    display: block;
+    width: 50px;
     margin-left: 5%;
 }
 /* header styling ends here */
